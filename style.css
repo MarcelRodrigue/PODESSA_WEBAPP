@@ -72,7 +72,34 @@ list-style: none;
     display: inline-block;
     padding-left: 3em;
 }
+/* ----------------------------------x------------------------------------ */
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
 .annimation{
+position: relative;
+}
+.annimation h1{
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+
+}
+.annimation h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary_color);
+}
+.annimation h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary_color);
+}
+/* ----------------------------------x------------------------------------ */
+/* .annimation{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +114,7 @@ list-style: none;
 color: #fff;
 margin-top: 3em;
 
-}
+} */
 .main_header .btn1{
 margin-top: 3em;
 margin-left: 1em;
@@ -146,24 +173,8 @@ margin-left: 45%;
     color: rgb(29, 29, 209);
 
 }
-.annimation{
-    position: relative;
-}
-.annimation h1{
-    position: absolute;
-    /* transform: translate(-50%, -50%);  */
-    font-size: 8em;
-}
-.annimation h1:nth-child(1){
-    color: transparent;
-    -webkit-text-stroke: 2px #fff;
+/*-----------------------------------------------------------------------*/
 
-}
-.annimation h1:nth-child(2){
-    color: var(--primary_color);
-    animation: water 4s ease-in-out;
-    -webkit-text-stroke: 2px #fff;
-}
 @keyframes water{
     0%{
         clip-path: polygon(0% 44%, 13% 39%, 30% 46%, 42% 55%, 52% 61%, 68% 66%, 84% 63%, 100% 50%, 99% 100%, 1% 99%, 0 99%);
@@ -176,10 +187,6 @@ margin-left: 45%;
     }
 }
 
-
-.water_effect{
-    padding-top: 2em;
-}
 /* -------------------------------------------------------------------- */
 
 
